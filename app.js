@@ -38,7 +38,7 @@ async function checkWeather(tableName) {
     // redondeo de la temp
     //document.querySelector(".temp").innerHTML = Math.round(ultimoRegistro.fields["Temp (C)"]) + "°C";
 
-    document.querySelector(".humidity").innerHTML = ultimoRegistro.fields["Hum %"] + "%";
+    document.querySelector(".humidity").innerHTML = Math.round(ultimoRegistro.fields["Hum %"]) + "%";
 
     //convierte la primera letra en mayuscula
     tableName = tableName.charAt(0).toUpperCase() + tableName.slice(1);
