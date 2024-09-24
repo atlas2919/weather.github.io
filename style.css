@@ -7,19 +7,26 @@
 
 body{
     background: #222;
+    background: url('images/background.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Asegura que siempre cubra toda la pantalla */
+    background-size: cover;
+    background-position: center;
 }
 
 .card{
+    position: relative;
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5B548a);
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
     color: #fff;
+    backdrop-filter: blur(30px);
     margin: 50px auto 0;
-    border-radius: 20px;
+    border-radius: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 16px;
     padding: 40px 35px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -101,4 +108,18 @@ body{
 
 .hidden{
     display: none;
+}
+
+.error-image {
+    display: block;
+    margin: 20px auto;
+    width: 200px;  /* Ajusta según lo que necesites */
+}
+
+.error-message {
+    text-align: center;
+    color: white;  /* Ajusta el color para que sea visible */
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
 }
